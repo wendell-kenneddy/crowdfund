@@ -1,0 +1,48 @@
+button,
+.button {
+  background: var(--moderate-cyan);
+  border: none;
+  border-radius: 3rem;
+  width: 70%;
+  height: 5.6rem;
+  font: 700 1.6rem 'Commissioner', sans-serif;
+  text-align: center;
+  color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover,
+.button:hover {
+  background: var(--dark-cyan);
+}
+
+button[disabled],
+.button[disabled] {
+  cursor: not-allowed;
+}
+
+a.back-to-top {
+  background-color: var(--moderate-cyan);
+  border: none;
+  padding: 0.5rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2.4rem;
+  clip-path: circle();
+  transition: 0.3s ease-in-out;
+  transform: translateY(100%) rotate(270deg);
+  visibility: hidden;
+  opacity: 0;
+}
+
+a.back-to-top.show {
+  transform: translateY(0) rotate(0);
+  visibility: visible;
+  opacity: 1;
+}

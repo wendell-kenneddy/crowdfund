@@ -1,0 +1,21 @@
+.cards {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  padding: 2rem 2.4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card.out-of-stock,
+.card.non-static.out-of-stock {
+  opacity: 0.5 !important;
+
+  button:hover {
+    background-color: var(--moderate-cyan);
+  }
+}

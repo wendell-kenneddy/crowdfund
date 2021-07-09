@@ -1,0 +1,140 @@
+@media (min-width: 767px) {
+  // image url relative to the public directory
+  #page-header {
+    background-image: url('../images/image-hero-desktop.jpg');
+  }
+
+  #page-header #open-menu {
+    display: none;
+  }
+
+  #page-header nav ul {
+    display: flex;
+    gap: 2rem;
+
+    hr {
+      display: none;
+    }
+
+    li a {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #page-header #menu-btn {
+    display: none;
+  }
+
+  #product-info .btn-group {
+    justify-content: space-between;
+    padding: 0 2rem;
+
+    a {
+      background: var(--bg-color);
+      border: none;
+      border-radius: 3rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin: 0 1.5rem;
+        display: inline-block;
+        color: var(--dark-grey);
+        font-weight: 500;
+      }
+    }
+
+    button {
+      width: 20rem;
+    }
+  }
+
+  #fund-info .text-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  #fund-info .text {
+    padding: 0 3rem;
+  }
+
+  #fund-info .text:nth-child(1)::after,
+  #fund-info .text:nth-child(2)::after {
+    width: 0.2rem;
+    height: 100%;
+    left: 100%;
+  }
+
+  .card {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    .option-info {
+      flex-direction: row;
+
+      p {
+        font-size: 2rem;
+      }
+    }
+
+    .reward-info {
+      flex-direction: row;
+      gap: 0;
+      justify-content: space-between;
+
+      button {
+        width: 20rem;
+      }
+    }
+  }
+
+  .modal .card {
+    position: relative;
+  }
+
+  .modal .card > p {
+    margin-bottom: 2rem;
+  }
+
+  .modal .donate-option-text {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .modal .card .reward-info {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .modal .cards .card.selected .enter-pledge {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn-group {
+      margin: 0;
+      margin-right: 2.4rem;
+    }
+
+    p {
+      width: 30%;
+      margin: 0;
+    }
+
+    p,
+    .btn-group {
+      margin-top: 1.5rem;
+    }
+  }
+}

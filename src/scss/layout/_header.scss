@@ -1,0 +1,99 @@
+#page-header {
+  // url relative to the public directory
+  background-image: url('../images/image-hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 30rem;
+  height: 20vw;
+}
+
+#page-header nav {
+  padding: 3rem 1.5rem 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #close-menu {
+    display: none;
+  }
+}
+
+#page-header nav .menu.show {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+
+  #close-menu {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 1.6rem;
+    z-index: 99;
+  }
+
+  ul {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 60vw;
+    max-width: 500px;
+    height: 20rem;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+
+    hr {
+      background-color: rgba(0, 0, 0, 0.2);
+      border: none;
+      width: 100%;
+      height: 0.1rem;
+    }
+
+    li a {
+      position: relative;
+      padding: 1rem 0;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 500;
+      color: var(--black);
+    }
+  }
+}
+
+.menu-btn {
+  width: 1.6rem;
+  height: 1.6rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &#open-menu {
+    background-image: url('../images/icon-hamburger.svg');
+  }
+
+  &#close-menu {
+    background-image: url('../images/icon-close-menu.svg');
+  }
+}
+
+.menu ul {
+  display: none;
+}

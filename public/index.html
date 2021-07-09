@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="creator" content="Wendell Kenneddy" />
+    <meta
+      name="description"
+      content="Crowdfund é um app de financiamento do produto Mastercraft Bamboo Monitor Riser."
+    />
+    <meta property="og:title" content="Crowdfund" />
+    <meta
+      property="og:description"
+      content="Crowdfund é um app de financiamento do produto Mastercraft Bamboo Monitor Riser."
+    />
+    <meta property="og:site_name" content="Crowdfund" />
+    <meta property="og:locale" content="pt-BR" />
+    <meta property="og:type" content="website" />
+    <meta name="tiwtter:title" content="Crowdfund" />
+    <meta
+      name="tiwtter:description"
+      content="Crowdfund é um app de financiamento do produto Mastercraft Bamboo Monitor Riser."
+    />
+    <title>Crowdfund</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      sizes="32x32"
+      href="./assets/images/favicon.svg"
+    />
+
+    <script
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+      defer
+    ></script>
+
+    <script src="./assets/js/bundle.js" defer></script>
+  </head>
+
+  <body>
+    <header id="page-header" role="heading">
+      <div id="header-bg"></div>
+
+      <nav role="navigation">
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="Logo Crowdfund" />
+        </a>
+
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+
+            <hr />
+
+            <li>
+              <a href="#">Descubra</a>
+            </li>
+
+            <hr />
+
+            <li>
+              <a href="#">Primeiros Passos</a>
+            </li>
+          </ul>
+
+          <div role="img" id="close-menu" class="menu-btn"></div>
+        </div>
+
+        <div role="img" id="open-menu" class="menu-btn"></div>
+      </nav>
+    </header>
+
+    <main class="container" role="main">
+      <section id="product-info" class="section">
+        <h2 class="sr-only">Informação do produto</h2>
+        <div class="sub-container">
+          <header>
+            <img
+              src="./assets/images/logo-mastercraft.svg"
+              alt="Logo do produto"
+              class="product-logo"
+            />
+
+            <h3 class="title">Mastercraft Bamboo Monitor Riser</h3>
+
+            <p>
+              A beautiful & handcrafted monitor stand to reduce neck and eye
+              strain.
+            </p>
+          </header>
+
+          <div class="btn-group">
+            <button id="backend-project" class="open-modal">
+              Apoiar projeto
+            </button>
+
+            <a href="#" id="bookmark-project">
+              <img
+                src="./assets/images/icon-bookmark.svg"
+                alt="Marcar projeto"
+              />
+
+              <span>Marcar</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="fund-info" class="section">
+        <h2 class="sr-only">Informação da arrecadação</h2>
+
+        <div class="sub-container">
+          <div class="text-container">
+            <div class="text">
+              <span id="total-fund">R$ 0,00</span>
+              de R$ 100,000 arrecadados
+            </div>
+
+            <div class="text">
+              <span id="total-pledgers">5,000</span>
+              doador(es)
+            </div>
+
+            <div class="text">
+              <span>56</span>
+              dias restantes
+            </div>
+          </div>
+
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fund-options" class="section">
+        <div class="sub-container">
+          <header>
+            <h2>Sobre o projeto</h2>
+
+            <p>
+              Mastercraft Bamboo Monitor Riser é uma plataforma robusta e
+              elegante que eleva sua tela a uma altura de visualização mais
+              confortável. Colocar o monitor no nível dos olhos tem o potencial
+              de melhorar sua postura e deixá-lo mais confortável no trabalho,
+              ajudando-o a manter o foco na tarefa em questão.
+            </p>
+
+            <p>
+              Apresentando habilidade artesanal, a simplicidade do design cria
+              espaço extra na mesa abaixo do seu computador para permitir que
+              blocos de notas, canetas e dispositivos USB sejam armazenados sob
+              o suporte.
+            </p>
+          </header>
+
+          <div class="cards">
+            <div class="card non-static" data-option="0">
+              <div class="option-info">
+                <p>Suporte de Bambu</p>
+                <span>Doe R$ 25,00 ou mais</span>
+              </div>
+
+              <div class="option-description">
+                <p>
+                  Você recebe um ergonômico suporte de bambu natural. Você nos
+                  ajudou a lançar nossa campanha promocional, então será
+                  adicionado a uma lista de membros Doadores.
+                </p>
+              </div>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span class="remaining-donates" data-option="0">150</span>
+                  restante(s)
+                </div>
+
+                <button class="open-modal">Selecionar Recompensa</button>
+              </div>
+            </div>
+
+            <div class="card non-static" data-option="1">
+              <div class="option-info">
+                <p>Suporte Black Edition</p>
+                <span>Doe R$ 75,00 ou mais</span>
+              </div>
+
+              <div class="option-description">
+                <p>
+                  Você recebe um suporte de computador Black Special Edition e
+                  um agradecimento pessoal. Você será adicionado à nossa lista
+                  de membros Doadores. Frete incluso.
+                </p>
+              </div>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span class="remaining-donates" data-option="1">100</span>
+                  restante(s)
+                </div>
+
+                <button class="open-modal">Selecionar Recompensa</button>
+              </div>
+            </div>
+
+            <div class="card out-of-stock">
+              <div class="option-info">
+                <p>Mogno Special Edition</p>
+                <span>Doe R$ 200,00 ou mais</span>
+              </div>
+
+              <div class="option-description">
+                <p>
+                  Você recebe dois suportes Special Edition de mogno, uma
+                  camiseta de Doador, e um agradecimento pessoal. Você será
+                  adicionado à nossa lista de membros Doadores. Frete incluso.
+                </p>
+              </div>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span>0</span>
+                  restante(s)
+                </div>
+
+                <button disabled>Selecionar Recompensa</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal-wrapper pledge-options">
+      <div class="modal">
+        <form action="#" id="donate-form">
+          <header>
+            <h2>Apoiar projeto</h2>
+
+            <img
+              src="./assets/images/icon-close-modal.svg"
+              alt="Fechar modal"
+              width="16"
+              height="16"
+              class="close-modal"
+            />
+          </header>
+
+          <p>
+            Deseja nos ajudar a trazer o Mastercraft Bamboo Monitor Riser ao
+            mundo?
+          </p>
+
+          <!-- Cards -->
+          <div class="cards">
+            <div class="card" data-card="0">
+              <div class="donate-option-title">
+                <input
+                  type="radio"
+                  name="donate-option"
+                  id="no-reward"
+                  data-card="0"
+                />
+
+                <div class="donate-option-text">
+                  <label for="no-reward">Doar sem recompensa</label>
+                </div>
+              </div>
+
+              <p>
+                Escolha nos apoiar sem recompensa se você simplesmente acredita
+                no nosso projeto. Como doador, você será listado para receber
+                atualizações sobre o produto pelo e-mail.
+              </p>
+
+              <div class="enter-pledge">
+                <p>Insira sua doação</p>
+
+                <div class="btn-group">
+                  <div class="input-wrapper">
+                    <span>R$</span>
+                    <input
+                      type="number"
+                      name="pledge-value"
+                      id="pledge-value-from-1"
+                      min="1"
+                      placeholder="1"
+                    />
+                  </div>
+
+                  <button>Continuar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card non-static" data-card="1" data-option="0">
+              <div class="donate-option-title">
+                <label for="25-reward" class="sr-only">Valor da doação</label>
+                <input
+                  type="radio"
+                  name="donate-option"
+                  id="25-reward"
+                  data-card="1"
+                />
+
+                <div class="donate-option-text">
+                  <label for="25-reward">Suporte de bambu</label>
+                  <p>Doe R$25,00 ou mais</p>
+                </div>
+              </div>
+
+              <p>
+                Você recebe um ergonômico suporte de bambu natural. Você nos
+                ajudou a lançar nossa campanha promocional, então será
+                adicionado a uma lista de membros Doadores.
+              </p>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span class="remaining-donates" data-option="0">100</span>
+                  restante(s)
+                </div>
+              </div>
+
+              <div class="enter-pledge">
+                <p>Insira sua doação</p>
+
+                <div class="btn-group">
+                  <div class="input-wrapper">
+                    <span>R$</span>
+                    <input
+                      type="number"
+                      name="pledge-value"
+                      id="pledge-value-from-25"
+                      min="25"
+                      placeholder="25"
+                    />
+                  </div>
+
+                  <button>Continuar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card non-static" data-card="2" data-option="1">
+              <div class="donate-option-title">
+                <label for="75-reward" class="sr-only">Valor da doação</label>
+                <input
+                  type="radio"
+                  name="donate-option"
+                  id="75-reward"
+                  data-card="2"
+                />
+
+                <div class="donate-option-text">
+                  <label for="75-reward">Suporte Black Edition</label>
+                  <p>Doe R$75,00 ou mais</p>
+                </div>
+              </div>
+
+              <p>
+                Você recebe um suporte de computador Black Special Edition e um
+                agradecimento pessoal. Você será adicionado à nossa lista de
+                membros Doadores. Frete incluso.
+              </p>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span class="remaining-donates" data-option="1">100</span>
+                  restante(s)
+                </div>
+              </div>
+
+              <div class="enter-pledge">
+                <p>Insira sua doação</p>
+
+                <div class="btn-group">
+                  <div class="input-wrapper">
+                    <span>R$</span>
+                    <input
+                      type="number"
+                      name="pledge-value"
+                      id="pledge-value-from-75"
+                      min="75"
+                      placeholder="75"
+                      step="1"
+                    />
+                  </div>
+
+                  <button>Continuar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card out-of-stock">
+              <div class="donate-option-title">
+                <input
+                  type="radio"
+                  name="donate-option"
+                  id="200-reward"
+                  disabled
+                />
+
+                <div class="donate-option-text">
+                  <label for="200-reward">Mogno Special Edition</label>
+                  <p>Doe R$200,00 ou mais</p>
+                </div>
+              </div>
+
+              <p>
+                Você recebe dois suportes Special Edition de mogno, uma camiseta
+                de Doador, e um agradecimento pessoal. Você será adicionado à
+                nossa lista de membros Doadores. Frete incluso.
+              </p>
+
+              <div class="reward-info">
+                <div class="total-remaining">
+                  <span>0</span>
+                  restante(s)
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <!-- Form end -->
+      </div>
+
+      <!-- Modal end -->
+    </div>
+
+    <div class="modal-wrapper completed-pledge">
+      <div class="modal">
+        <img src="./assets/images/icon-check.svg" alt="Doação concluída" />
+
+        <h2>Obrigado pelo seu apoio!</h2>
+
+        <p>
+          Sua doação nos deixa um passo mais próximos de lançar o Mastercraft
+          Bamboo Monitor Riser mundialmente. Você receberá um e-mail assim que
+          nossa campanha for concluída.
+        </p>
+
+        <button id="close-completed-pledge">Entendi!</button>
+      </div>
+    </div>
+
+    <a href="#page-header" class="back-to-top">
+      <img
+        src="./assets/images/arrow-up.svg"
+        alt="Voltar ao topo"
+        width="16"
+        height="16"
+      />
+    </a>
+  </body>
+</html>

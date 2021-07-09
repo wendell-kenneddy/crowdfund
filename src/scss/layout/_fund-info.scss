@@ -1,0 +1,57 @@
+#fund-info .sub-container {
+  overflow: auto;
+  display: grid;
+  gap: 1.5rem;
+}
+
+#fund-info .text {
+  text-align: center;
+}
+
+#fund-info .progress-bar-container {
+  background: var(--bg-color);
+  border: none;
+  border-radius: 3rem;
+  width: 100%;
+  height: 1.2rem;
+}
+
+#fund-info .progress-bar-container .progress-bar {
+  background: var(--moderate-cyan);
+  border: none;
+  border-radius: 3rem;
+  width: 50%;
+  height: 100%;
+}
+
+#fund-info {
+  font-size: 1.3rem;
+  color: var(--dark-grey);
+}
+
+#fund-info .text {
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+#fund-info .text span {
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+#fund-info .text:nth-child(1)::after,
+#fund-info .text:nth-child(2)::after {
+  content: '';
+  background: #e0dfdf;
+  border-radius: 3rem;
+  width: 25%;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}

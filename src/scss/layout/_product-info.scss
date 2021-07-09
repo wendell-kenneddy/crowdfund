@@ -1,0 +1,40 @@
+#product-info .sub-container {
+  position: relative;
+}
+
+#product-info .product-logo {
+  position: absolute;
+  top: -2rem;
+  left: 0%;
+  right: 0;
+  margin: 0 auto;
+}
+
+#product-info header {
+  margin: 4rem 0 2rem;
+  text-align: center;
+}
+
+#product-info header p {
+  color: var(--dark-grey);
+}
+
+#product-info .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  a span {
+    display: none;
+  }
+
+  a img {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
+
+#product-info .btn-group a.bookmarked span {
+  color: var(--moderate-cyan);
+}
