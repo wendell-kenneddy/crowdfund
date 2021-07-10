@@ -1,7 +1,7 @@
 # Crowdfund
 
 ![Autor](https://img.shields.io/badge/author-Wendell%20Kenneddy-brightgreen)
-![Tecnologias utilizadas](https://img.shields.io/badge/techs-HTML5,%20CSS3,%20Webpack,%20ScrollReveal%20and%20JS-brightgreen)
+![Tecnologias utilizadas](https://img.shields.io/badge/techs-HTML5,%20SCSS,%20Webpack,%20ScrollReveal%20and%20JS-brightgreen)
 ![Status](https://img.shields.io/badge/status-Concluded-brightgreen)
 ![PRs](https://img.shields.io/badge/PRs-Welcome-brightgreen)
 ![Licença](https://img.shields.io/badge/license-MIT-brightgreen)
@@ -31,7 +31,7 @@ Crowdfund é uma aplicação de financiamento coletivo, desenvolvida como um dos
 Para desenvolver esta aplicação, utilizei as seguintes tecnologias:
 
 - HTML5
-- CSS3
+- SCSS (convertido para CSS3)
 - Javascript
 - ScrollReveal
 - Webpack
